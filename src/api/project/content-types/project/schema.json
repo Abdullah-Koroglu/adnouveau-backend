@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "production",
+        "postproduction",
+        "design"
+      ],
+      "required": true
+    },
+    "subheader": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "artDirector": {
+      "type": "string"
+    },
+    "designer": {
+      "type": "string"
+    },
+    "SectionList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "work-sections.section"
+    },
+    "summary": {
+      "type": "text"
+    },
+    "client": {
+      "type": "string"
+    }
+  }
+}
