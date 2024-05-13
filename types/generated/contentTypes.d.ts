@@ -873,6 +873,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     SectionList: Attribute.Component<'work-sections.section', true>;
     summary: Attribute.Text;
     client: Attribute.String;
+    video: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
