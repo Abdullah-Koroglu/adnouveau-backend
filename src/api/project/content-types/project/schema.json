@@ -54,13 +54,6 @@
     },
     "client": {
       "type": "string"
-    },
-    "video": {
-      "allowedTypes": [
-        "videos"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }

@@ -14,6 +14,7 @@ export interface WorkSectionsSection extends Schema.Component {
       ['text-altta', 'text-sagda', 'text-solda', 'text-sadece', 'image-sadece']
     >;
     image: Attribute.Media;
+    video: Attribute.Media;
   };
 }
 
