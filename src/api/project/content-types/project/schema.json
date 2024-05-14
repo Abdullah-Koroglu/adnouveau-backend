@@ -38,12 +38,6 @@
     "date": {
       "type": "date"
     },
-    "artDirector": {
-      "type": "string"
-    },
-    "designer": {
-      "type": "string"
-    },
     "SectionList": {
       "type": "component",
       "repeatable": true,
@@ -54,6 +48,11 @@
     },
     "client": {
       "type": "string"
+    },
+    "contributors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contributor.person"
     }
   }
 }

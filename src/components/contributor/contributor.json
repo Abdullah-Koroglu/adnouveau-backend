@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_contributor_contributors",
+  "info": {
+    "displayName": "contributor",
+    "icon": "emotionUnhappy",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "person": {
+      "displayName": "person",
+      "type": "component",
+      "repeatable": true,
+      "component": "contributor.person"
+    }
+  }
+}

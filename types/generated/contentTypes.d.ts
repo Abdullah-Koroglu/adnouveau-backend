@@ -868,11 +868,10 @@ export interface ApiProjectProject extends Schema.CollectionType {
       Attribute.Required;
     subheader: Attribute.String;
     date: Attribute.Date;
-    artDirector: Attribute.String;
-    designer: Attribute.String;
     SectionList: Attribute.Component<'work-sections.section', true>;
     summary: Attribute.Text;
     client: Attribute.String;
+    contributors: Attribute.Component<'contributor.person', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
