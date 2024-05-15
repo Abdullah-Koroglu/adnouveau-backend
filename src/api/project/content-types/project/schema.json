@@ -46,13 +46,16 @@
     "summary": {
       "type": "text"
     },
-    "client": {
-      "type": "string"
-    },
     "contributors": {
       "type": "component",
       "repeatable": true,
       "component": "contributor.person"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z-]+$"
     }
   }
 }

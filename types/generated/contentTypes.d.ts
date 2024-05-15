@@ -794,6 +794,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     singularName: 'article';
     pluralName: 'articles';
     displayName: 'Article';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -802,6 +803,7 @@ export interface ApiArticleArticle extends Schema.CollectionType {
     title: Attribute.String;
     text: Attribute.Blocks;
     image: Attribute.Media;
+    slug: Attribute.String & Attribute.Required & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -870,8 +872,8 @@ export interface ApiProjectProject extends Schema.CollectionType {
     date: Attribute.Date;
     SectionList: Attribute.Component<'work-sections.section', true>;
     summary: Attribute.Text;
-    client: Attribute.String;
     contributors: Attribute.Component<'contributor.person', true>;
+    slug: Attribute.String & Attribute.Required & Attribute.Unique;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
