@@ -56,6 +56,11 @@
       "required": true,
       "unique": true,
       "regex": "^[a-z-]+$"
+    },
+    "unlisted": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }

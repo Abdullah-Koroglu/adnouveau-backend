@@ -874,6 +874,9 @@ export interface ApiProjectProject extends Schema.CollectionType {
     summary: Attribute.Text;
     contributors: Attribute.Component<'contributor.person', true>;
     slug: Attribute.String & Attribute.Required & Attribute.Unique;
+    unlisted: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
