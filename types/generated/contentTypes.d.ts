@@ -877,6 +877,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
     unlisted: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<false>;
+    order: Attribute.Integer & Attribute.Required & Attribute.DefaultTo<1>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
